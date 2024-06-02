@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCpoint - Презентация мобильного приложения</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            box-sizing: border-box;
+            background-image: url('https://c.pxhere.com/photos/80/89/4k_wallpaper_clean_desk_earphones_HD_wallpaper_keyboard_minimalism_minimalist-1555005.jpg!d');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(20, 20, 20, 0.8); /* Полупрозрачный фон */
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ac210f;
+        }
+
+        section {
+            padding: 3em 1em;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
+            border-radius: 10px;
+            margin: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        .highlight {
+            color: #ac210f;
+        }
+
+        h1, h2, h3 {
+            color: #e0e0e0;
+        }
+
+        p {
+            color: #b0b0b0;
+        }
+
+        .button {
+            background-color: #ac210f;
+            color: #fff;
+            border: none;
+            padding: 0.8em 2em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1em;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ac210f;
+        }
+
+        .features-container, .screenshots-container, .download-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .feature {
+            background-color: rgba(30, 30, 30, 0.8); /* Полупрозрачный фон */
+            border-radius: 10px;
+            padding: 2em;
+            flex: 1 1 calc(25% - 2em);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.7);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #ac210f;
+        }
+
+        .screenshots-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .download-buttons .android {
+            background-color: #3DDC84;
+        }
+
+        .contact-info p {
+            margin: 0.5em 0;
+        }
+
+        .contact-info a {
+            color: #ac210f;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #ac210f;
+        }
+
+        footer {
+            background-color: rgba(30, 30, 30, 0.8); /* Полупрозрачный фон */
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .features-container, .screenshots-container, .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                flex: 1 1 100%;
+                margin-bottom: 1em;
+            }
+
+            .button {
+                padding: 0.6em 1.5em;
+                font-size: 1em;
+            }
+
+            header {
+                padding: 1em;
+            }
+
+            section {
+                padding: 2em 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                gap: 0.5em;
+            }
+
+            .button {
+                padding: 0.5em 1.2em;
+                font-size: 0.9em;
+            }
+
+            .feature {
+                padding: 1.5em;
+            }
+
+            header {
+                padding: 0.5em;
+            }
+
+            section {
+                padding: 1em 0.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="home">
+        <h1>Добро пожаловать в <span class="highlight">PCpoint</span></h1>
+        <p>Лучшее приложение для покупки и продажи компьютеров и комплектующих</p>
+        <a href="#download" class="button">Скачать сейчас</a>
+    </section>
+</body>
+</html>
